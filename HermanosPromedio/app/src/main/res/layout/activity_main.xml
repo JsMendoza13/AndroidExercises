@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/material_dynamic_neutral60"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:srcCompat="@drawable/bros" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/system_accent1_500"
+        android:text="Informacion Hermano #1"
+        tools:targetApi="s" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/lbBroUno"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@android:color/system_accent1_500"
+            android:ems="10"
+            android:hint="Digite su Nombre"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20dp"
+            tools:targetApi="s" />
+
+        <EditText
+            android:id="@+id/lbBroEdadUno"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@android:color/system_accent1_200"
+            android:ems="10"
+            android:hint="Digite su Edad"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            tools:targetApi="s" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textBro2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/system_accent1_500"
+        android:text="Informacion Hermano #2"
+        tools:targetApi="s" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/lbBroDos"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@android:color/system_accent1_500"
+            android:ems="10"
+            android:hint="Digite su Nombre"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20dp"
+            tools:targetApi="s" />
+
+        <EditText
+            android:id="@+id/lbBroEdadDos"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@android:color/system_accent1_200"
+            android:ems="10"
+            android:hint="Digite su Edad"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            tools:targetApi="s" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textBro3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/system_accent1_500"
+        android:text="Informacion Hermano #3"
+        tools:targetApi="s" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/lbBroTres"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@android:color/system_accent1_500"
+            android:ems="10"
+            android:hint="Digite su Nombre"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20dp"
+            tools:targetApi="s" />
+
+        <EditText
+            android:id="@+id/lbBroEdadTres"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:background="@android:color/system_accent1_200"
+            android:ems="10"
+            android:hint="Digite su Edad"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            tools:targetApi="s" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/BtnPromedio"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:layout_gravity="center"
+        android:text="Sacar Promedio"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/etiBroUno"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cardview_dark_background"
+        android:paddingLeft="20dp"
+        android:text="Hermano #1: "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:targetApi="s" />
+    <TextView
+        android:id="@+id/etiBroDos"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cardview_dark_background"
+        android:paddingLeft="20dp"
+        android:text="Hermano #2: "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:targetApi="s" />
+    <TextView
+        android:id="@+id/etiBroTres"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cardview_dark_background"
+        android:paddingLeft="20dp"
+        android:text="Hermano #3: "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:targetApi="s" />
+
+    <TextView
+        android:id="@+id/etiPromedio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_dark_background"
+        android:text="El promedio de edad es: "
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        tools:targetApi="s" />
+
+
+</LinearLayout>
+
+

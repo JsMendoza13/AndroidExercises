@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/system_accent2_100"
+    tools:context=".MainActivity"
+    tools:targetApi="s">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        app:srcCompat="@drawable/carwash"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextTaxiConteo"
+            android:layout_width="247dp"
+            android:layout_height="69dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="-15dp"
+            android:text="Cantidad de Taxis Lavados: "
+            android:textColor="@android:color/system_accent2_50"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lbTaxiConteo"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:hint="Ingrese la cantidad" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextBusesConteo"
+            android:layout_width="246dp"
+            android:layout_height="69dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="-15dp"
+            android:text="Cantidad de Buses Lavados: "
+            android:textColor="@android:color/system_accent2_50"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lbBusesConteo"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:hint="Ingrese la cantidad" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextParticularesConteo"
+            android:layout_width="247dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="-15dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Cant. de Particulares Lavados: "
+            android:textColor="@android:color/system_accent2_50"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lbParticularesConteo"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:hint="Ingrese la cantidad" />
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/TextMotosConteo"
+        android:layout_width="246dp"
+        android:layout_height="69dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Cant. de Motos Lavadas: "
+        android:layout_marginTop="-15dp"
+        android:textColor="@android:color/system_accent2_50"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/lbMotosConteo"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:hint="Ingrese la cantidad"
+       />
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/BtnCalculo"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calcular"
+        android:layout_marginBottom="10dp"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/material_dynamic_primary20"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/TextDineroTaxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/system_neutral1_200"
+        android:text="Dinero Por Lavado de Taxis:  "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TextDineroBuses"
+        android:layout_width="235dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/system_neutral1_200"
+        android:text="Dinero Por Lavado de Buses:  "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TextDineroParticulares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/system_neutral1_200"
+        android:text="Dinero Por Lavado de Particulares:  "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:id="@+id/TextDineroMoto"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/system_neutral1_200"
+        android:text="Dinero Por Lavado de Motos:  "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TextDineroTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/system_neutral1_200"
+        android:text="Dinero Total Realizado:  "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

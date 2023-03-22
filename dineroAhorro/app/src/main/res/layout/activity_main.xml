@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        app:srcCompat="@drawable/money"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/etiSalarioMensual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cual es su salario mensual? "
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/inpSalarioMensual"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_green_light"
+        android:hint="Ingrese su salario"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:paddingLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/etiIngresoExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registre sus ingresos Extras "
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/inpIngresoExtra"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@android:color/holo_green_light"
+        android:hint="Ingrese sus ingresos extras"
+        android:layout_marginBottom="15dp"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:paddingLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/etiIngresoGastos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cuanto son sus gastos mensuales?"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/inpIngresoGastos"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@android:color/holo_red_light"
+        android:hint="Ingrese sus gastos al mes"
+        android:textColorHint="@color/material_dynamic_neutral40"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:paddingLeft="15dp"
+        android:textStyle="italic"
+        tools:targetApi="s" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="REALIZAR CALCULO"
+        android:layout_gravity="center"
+        app:cornerRadius="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="23dp"
+        android:backgroundTint="@color/material_dynamic_primary60"
+        android:onClick="onClick"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+   <TextView
+       android:id="@+id/lbResult"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="El resultado es: "
+       android:textStyle="bold"
+       android:textSize="24dp"
+       android:textColor="@color/teal_700"
+       android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+</LinearLayout>
